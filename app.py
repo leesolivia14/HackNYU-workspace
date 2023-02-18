@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
-
+import requests
+api_key = 'unwIttz59iNAXrLsiHSwV0n3Wrb8hKR0nm4TMq2D'
 # creating an instance of Flask class
 # needed so that Flask knows where to look for resources such as templates and static files
 app = Flask(__name__)
@@ -13,8 +14,13 @@ def index_page():
 
     if request.method == 'POST':
         data = request.form
-        print(data+'\n')
+        location = data.getlist('location')
+        budget = data.getlist('budget')
+        gpa = data.getlist('GPA')
+        major = data.getlist('major')
+        size = data.getlist('size')
+        #print(data.getlist('location'))
+        print(location, budget, gpa, major, size)
         return render_template("index.html")
 
-
-
+#def get_inputs():

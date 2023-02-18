@@ -1,21 +1,26 @@
-*{
+/** *{
     margin: 0;
     padding: 0;
 }
+**/
 
-body{
-    min-height:1000px;
+
+.page{
     margin: 0;
     padding: 0;
-    background-color: rgb(19, 19, 19);
+    min-height: 1000px;
+    /**background-image: linear-gradient(#52307c, #7c5295);**/
+    background: linear-gradient( #52307c, #bca0dc);
 }
 
 .card{
     display: flex;
     
 }
+
 .input{
     border-radius: 16px;
+    
 }
 
 html{
@@ -24,6 +29,5 @@ html{
 
 .title h1{
     font-size: 90px;
-    color: #ffffff;
 
 }

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height:1000px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 19, 19);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.title h1{
+    font-size: 90px;
+    color: #ffffff;
+}

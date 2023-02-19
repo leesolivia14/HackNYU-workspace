@@ -15,34 +15,47 @@
 
 .card{
     border-radius: 16px;
-    justify-content: space-evenly;
-    justify-content: center;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: center;
+    background-color: #bca0dc;
+    min-height: 35em;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 200px 200px 200px;
 }
 
 
 .carditem {
-    flex-basis: calc(33.33% - 10px); /* Each item takes up 33.33% of the container's width minus 10px for margins */
-    height: 200px;
+    margin: 10px;
+    border-radius: 32px;
     width: 200px;
-    margin: 5px; /* Adjust the margin to your liking */
-    background-color: #ccc;
+    height: 200px;
     text-align: center;
+
 }
 
-.carditem:nth-child(4),
-.carditem:nth-child(5) {
-  margin-top: 10px; /* Add extra margin to bottom two items to separate them from top three items */
+
+
+
+
+
+
+img:hover {
+    background-color: lightgray;
+    opacity: 40%;
 }
 
-.carditem:nth-child(1),
-.carditem:nth-child(2),
-.carditem:nth-child(3) {
-  flex-grow: 1; /* Make top three items grow to fill empty space */
+
+.carditem:hover {
+    background-color: yellow;
+    opacity: 40%;
 }
 
+.line-break {
+    flex-basis: 100%;
+    height: 0;
+}
 
 html{
     scroll-behavior: smooth;
@@ -52,3 +65,17 @@ html{
     font-size: 90px;
 
 }
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.submit-section {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+

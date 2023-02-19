@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
-import requests
+
+
 api_key = 'unwIttz59iNAXrLsiHSwV0n3Wrb8hKR0nm4TMq2D'
 # creating an instance of Flask class
 # needed so that Flask knows where to look for resources such as templates and static files

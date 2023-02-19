@@ -21,44 +21,35 @@
             <form method="post">
             
                 <div class="card">
-                        <div class="carditem" id="location"">
+                        <div class="carditem" id="location">
                             <label for= "location"></label>
                             <img src="./static/img/location.png" alt="location" id="locationimg">
-                            
+                            <p>Location</p>
                         </div>
 
 
-                        <div class="carditem" id="budget"">
+                        <div class="carditem" id="budget">
                             
                             <label for= "budget"></label>
                             <img src="./static/img/budget.png" alt="budget" id="budgetimg">
-
+                            <p>Budget</p>
                             
                         </div>
                         
-                        <div class="carditem" id="GPA"">
-                            <input type="text" name="GPA" placeholder="GPA" required = "required"/>
-                            <img src="./static/img/location.png" alt="gpa">
+                        <div class="carditem" id="SAT">
+                            <img src="./static/img/location.png" alt="sat" id ="SATimg">
+                            <p>SAT</p>
                         </div>
-                    
-            
-                
-        
-                        <div class="carditem" id="major">
-                            <input type="text" name="major" placeholder="major" required = "required"/>
-                            <img src="./static/img/location.png" alt="major">
+
+                        <div class="carditem" id="ACT">
+                            <img src="./static/img/location.png" alt="act" id = "ACTimg">
+                            <p>ACT</p>
                         </div>
 
                         <div class="carditem" id="size">
                             <label for= "size"></label>
-                            <img src="./static/img/location.png" alt="size">
-                        
-
-                            <select name="size" id="size">
-                                <option value="0">Small</option>
-                                <option value="1">Medium</option>
-                                <option value="2">Large</option>
-                            </select>
+                            <img src="./static/img/population.png" alt="size" id = "sizeimg">
+                            <p>Preferred Size</p>
                         </div>
                     
 
@@ -74,7 +65,7 @@
             
             <div class="submit-section">
                 <form id="realform" action="" method="post">
-
+                    
                     <select class="dropdown" name="location" id="locationform">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -137,15 +128,42 @@
                         <option value="VI">Virgin Islands</option>
                     </select>
         
-                    <select class="dropdown" name="budget" id="budgetform">
+                    <select class="dropdown" name="budget" id="budgetform" required>
                         <option value="0">0 - $5,000</option>
-                        <option value="1">0 - $5,000</option>
-                        <option value="2">0 - $5,000</option>
-                        <option value="3">0 - $5,000</option>
-                        <option value="4">0 - $5,000</option>
-                        <option value="5">0 - $5,000</option>
-                        <option value="6">0 - $5,000</option>
+                        <option value="1">5 - $15,000</option>
+                        <option value="2">$15,000 - $25,000</option>
+                        <option value="3">$25,000 - $35,000</option>
+                        <option value="4">$35,000 - $45,000</option>
+                        <option value="5">$45,000 - $55,000</option>
+                        <option value="6">$55,000 - $65,000</option>
                     </select>
+
+                    <select class="dropdown"name="SAT" id="SATform" >
+                        <option value="400">400</option>
+                        <option value="410">410</option>
+                        <option value="420">420</option>
+                        <option value="430">430</option>
+                        <option value="440">440</option>
+                        <option value="450">450</option>
+                        <option value="460">460</option>
+                    </select>
+
+                    <select class="dropdown"name="ACT" id="ACTform" >
+                        <option value="1">400</option>
+                        <option value="2">410</option>
+                        <option value="3">420</option>
+                        <option value="4">430</option>
+                        <option value="5">440</option>
+                        <option value="6">450</option>
+                        <option value="7">460</option>
+                    </select>
+
+                    <select class="dropdown"name="size" id="sizeform">
+                        <option value="0">Small</option>
+                        <option value="1">Medium</option>
+                        <option value="2">Large</option>
+                    </select>
+
 
                     <input class="button" type="submit" value="submit"></input>
             

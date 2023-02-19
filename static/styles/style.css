@@ -33,6 +33,7 @@
     height: 200px;
     text-align: center;
 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -60,7 +61,7 @@ html{
 
 .title h1{
     font-size: 90px;
-
+    text-align: center;
 }
 
 img {
@@ -74,9 +75,10 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+
 }
 
 
-#locationform, #budgetform {
+#locationform, #budgetform, #SATform, #ACTform, #sizeform, #gpaform{
     display:none;
 }

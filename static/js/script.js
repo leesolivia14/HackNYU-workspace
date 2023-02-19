@@ -6,8 +6,8 @@ function displayForm(formType){
 }
 
 function clearAll(){
-    const forms = ['locationform', 'budgetform'];
-    for (let i=0; i<2; i++) {
+    const forms = ['locationform', 'budgetform', 'SATform', 'sizeform', 'ACTform'];
+    for (let i=0; i<5; i++) {
         const form = document.getElementById(forms[i]);
         form.style.display = "none";
     }
@@ -20,39 +20,35 @@ function main(){
         if (evt.target.id==='locationimg'){
             const form = document.getElementById("locationform");
             console.log(form.style);
-
             clearAll();
-
-            form.style.display = "block";
-
-            /*
-            if (form.style.display ==="block") {
-                form.style.display = "none";
-                console.log('here')
-            }
-            else{
-                form.style.display = "block";
-                console.log('fail')
-            }
-            */
-            
+            form.style.display = "block";           
         }
 
         else if (evt.target.id==='budgetimg'){
             const form = document.getElementById("budgetform");
             console.log(form.style);
-            console.log('bruh')
-            /*
+            
+            clearAll();
 
-            if (form.style.display ==="block") {
-                form.style.display = "none";
-                console.log('here')
-            }
-            else{
-                form.style.display = "block";
-                console.log('fail')
-            }
-            */
+            form.style.display = "block";
+        } else if (evt.target.id==='SATimg'){
+            const form = document.getElementById("SATform");
+            console.log(form.style);
+            
+            clearAll();
+
+            form.style.display = "block";
+        } else if (evt.target.id==='placeholder'){
+            const form = document.getElementById("placeholderform");
+            console.log(form.style);
+            
+            clearAll();
+
+            form.style.display = "block";
+        } else if (evt.target.id==='sizeimg'){
+            const form = document.getElementById("sizeform");
+            console.log(form.style);
+            
             clearAll();
 
             form.style.display = "block";

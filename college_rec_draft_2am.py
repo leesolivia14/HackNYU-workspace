@@ -102,7 +102,7 @@ def getColleges(location, budget, satread, satmath, act):
             self.admissionwom = admissionwom
 
         def __str__(self):
-            return self.name
+            return ','.join([str(self.name), str(self.state), str(self.appfee), str(self.roomboard)])
 
     topfive = []
     for i in range(5):
@@ -118,15 +118,36 @@ def getColleges(location, budget, satread, satmath, act):
             self.sat = sat
             self.act = act
 
-    result = [0,0,0,0,0]
+    result_list = [0,0,0,0,0]
+    result_dict = {}
+
     c = 0
     for x in topfive:
-        result[c] = x
-        print(result[c])
-        c += 1
+       # print(x)
+        
+        result_list[0] = x
         
 
-    print(result)
+        result_parsed = str(x).split(',')
 
-    return result
+        #print(result_parsed)
+        college_name = result_parsed[0]
+        result_dict[c] = {'name':result_parsed[0],'state':result_parsed[1], 'appfee': result_parsed[2], 'roomboard': result_parsed[3]}
+        #print(result_dict[c])
+        
+        #print(x)
+        '''
+        for y in x:
+            result[c] = y
+            print(result[c])
+        '''
+        c += 1
+    
+    #result_dict.update({'name': result_list})
+
+    #print(result_dict)
+
+
+
+    return result_dict
             

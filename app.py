@@ -63,9 +63,33 @@ def index_page():
         topfive = getColleges(location, budget, satread, satmath, act)
 
         print("finished generating top 5 colleges")
-        print(topfive[0])
+        #print(topfive)
 
-        return render_template("collage.html", first=topfive[0], second=topfive[1], third=topfive[2], fourth=topfive[3], fifth=topfive[4])
+        return render_template("collage.html", first_name=topfive[0]['name'],
+                                                first_state=topfive[0]['state'],
+                                                first_appfee=topfive[0]['appfee'],
+                                                first_roomboard=topfive[0]['roomboard'],
+
+                                                second_name=topfive[1]['name'],
+                                                second_state=topfive[1]['state'],
+                                                second_appfee=topfive[1]['appfee'],
+                                                second_roomboard=topfive[1]['roomboard'],
+                                                    
+                                                third_name=topfive[2]['name'],
+                                                third_state=topfive[2]['state'],
+                                                third_appfee=topfive[2]['appfee'],
+                                                third_roomboard=topfive[2]['roomboard'],
+
+                                                fourth_name=topfive[3]['name'],
+                                                fourth_state=topfive[3]['state'],
+                                                fourth_appfee=topfive[3]['appfee'],
+                                                fourth_roomboard=topfive[3]['roomboard'],
+
+                                                fifth_name=topfive[4]['name'],
+                                                fifth_state=topfive[4]['state'],
+                                                fifth_appfee=topfive[4]['appfee'],
+                                                fifth_roomboard=topfive[4]['roomboard'])
+                                                
 
 
 

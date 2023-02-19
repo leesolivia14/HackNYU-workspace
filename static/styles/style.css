@@ -168,6 +168,10 @@ img {
 
 
 /** CSS for collage **/
+.college-name {
+    font-weight: bold;
+}
+
 .collagecontainer {
     width: 60%;
     margin: 2rem auto;
@@ -193,6 +197,14 @@ img {
    
 }
 
+
+
+.college-info {
+    font-size: 16px;
+}
+
+
+
 .collageitem {
     background-color: lightyellow;
 }
@@ -204,12 +216,28 @@ img {
   
 }
 
+#collageitem--1 .college-info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 10px;
+}
+
 #collageitem--2 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
     font-size: 1.5em;
+}
+
+#collageitem--2 .college-info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 16px;
 }
 
 #collageitem--3 {
@@ -222,6 +250,15 @@ img {
     
 }
 
+#collageitem--3 .college-info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 32px;
+}
+
+
 
 #collageitem--4 {
     grid-column-start: 1;
@@ -231,6 +268,15 @@ img {
     font-size: 2em;
 }
 
+#collageitem--4 .college-info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 18px;
+}
+
+
 
 #collageitem--5 {
     grid-column-start: 1;
@@ -239,6 +285,15 @@ img {
     grid-row-end: 9;
     font-size: 2.5em;
 }
+
+#collageitem--5 .college-info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 22px;
+}
+
 
 /**
 #collageitem--6 {

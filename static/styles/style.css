@@ -42,15 +42,12 @@
 
 
 img:hover {
-    background-color: lightgray;
+    background-color: linear-gradient(45deg, yellow, rgb(223, 223, 116));
     opacity: 40%;
 }
 
 
-.carditem:hover {
-    background-color: yellow;
-    opacity: 40%;
-}
+
 
 .line-break {
     flex-basis: 100%;
@@ -79,3 +76,7 @@ img {
     flex-wrap:wrap;
 }
 
+
+#locationform, #budgetform {
+    display:none;
+}

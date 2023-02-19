@@ -21,10 +21,11 @@
             <form method="post">
             
                 <div class="card">
+                        
                         <div class="carditem" id="location">
                             <label for= "location"></label>
                             <img src="./static/img/location.png" alt="location" id="locationimg">
-                            <p>Location</p>
+                            <p>Instate?</p>
                         </div>
 
 
@@ -36,8 +37,13 @@
                             
                         </div>
                         
-                        <div class="carditem" id="SAT">
-                            <img src="./static/img/location.png" alt="sat" id ="SATimg">
+                        <div class="carditem" id="SATread">
+                            <img src="./static/img/location.png" alt="satread" id ="SATreadimg">
+                            <p>SAT</p>
+                        </div>
+
+                        <div class="carditem" id="SATmath">
+                            <img src="./static/img/location.png" alt="satmath" id ="SATmathimg">
                             <p>SAT</p>
                         </div>
 
@@ -66,6 +72,11 @@
             <div class="submit-section">
                 <form id="realform" action="" method="post">
                     
+                    <select class="dropdown" name="location" id="locationform">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                    <!--
                     <select class="dropdown" name="location" id="locationform">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -119,15 +130,16 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
                         <option value="AS">AS</option>
-
+                    -->
                     <!--Outlying Territories-->
+                    <!---
                         <option value="GU">Guam</option>
                         <option value="MP">Northern Mariana Islands</option>
                         <option value="PR">Puerto Rico</option>
                         <option value="UM">United States Minor Islands</option>
                         <option value="VI">Virgin Islands</option>
                     </select>
-        
+                    -->
                     <select class="dropdown" name="budget" id="budgetform" required>
                         <option value="0">0 - $5,000</option>
                         <option value="1">5 - $15,000</option>
@@ -138,25 +150,11 @@
                         <option value="6">$55,000 - $65,000</option>
                     </select>
 
-                    <select class="dropdown"name="SAT" id="SATform" >
-                        <option value="400">400</option>
-                        <option value="410">410</option>
-                        <option value="420">420</option>
-                        <option value="430">430</option>
-                        <option value="440">440</option>
-                        <option value="450">450</option>
-                        <option value="460">460</option>
-                    </select>
+                    <input type="text"name="SATread" id="SATreadform" > </input>
+                    <input type="text"name="SATmath" id="SATmathform" > </input>
+                    
 
-                    <select class="dropdown"name="ACT" id="ACTform" >
-                        <option value="1">400</option>
-                        <option value="2">410</option>
-                        <option value="3">420</option>
-                        <option value="4">430</option>
-                        <option value="5">440</option>
-                        <option value="6">450</option>
-                        <option value="7">460</option>
-                    </select>
+                    <input type="text"name="ACT" id="ACTform" > </input>
 
                     <select class="dropdown"name="size" id="sizeform">
                         <option value="0">Small</option>

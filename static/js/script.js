@@ -6,8 +6,8 @@ function displayForm(formType){
 }
 
 function clearAll(){
-    const forms = ['locationform', 'budgetform', 'SATform', 'sizeform', 'ACTform'];
-    for (let i=0; i<5; i++) {
+    const forms = ['locationform', 'budgetform', 'SATreadform', 'SATmathform', 'sizeform', 'ACTform'];
+    for (let i=0; i<6; i++) {
         const form = document.getElementById(forms[i]);
         form.style.display = "none";
     }
@@ -31,15 +31,22 @@ function main(){
             clearAll();
 
             form.style.display = "block";
-        } else if (evt.target.id==='SATimg'){
-            const form = document.getElementById("SATform");
+        } else if (evt.target.id==='SATreadimg'){
+            const form = document.getElementById("SATreadform");
             console.log(form.style);
             
             clearAll();
 
             form.style.display = "block";
-        } else if (evt.target.id==='placeholder'){
-            const form = document.getElementById("placeholderform");
+        } else if (evt.target.id==='SATmathimg'){
+            const form = document.getElementById("SATmathform");
+            console.log(form.style);
+            
+            clearAll();
+
+            form.style.display = "block";
+        }else if (evt.target.id==='ACTimg'){
+            const form = document.getElementById("ACTform");
             console.log(form.style);
             
             clearAll();
@@ -55,7 +62,6 @@ function main(){
         }
 
     });
-    //displayDropdown(formType);
 }
 
 document.addEventListener('DOMContentLoaded', main);

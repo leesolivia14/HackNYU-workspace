@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[56]:
-
+from app import *
 
 import pandas as pd
 import numpy as np
@@ -52,7 +52,9 @@ scaler = MinMaxScaler()
 transformtest = scaler.fit_transform(traincols)
 
 # this is where you put stuff!!!
-user_features = np.array([0,80000,0,0,0,800,800])  # likes drama, action, and thriller movies
+
+
+user_features = np.array([instate,outstate,instategrads,outstategrads,meanACt,meansatmath,meansatreading])  # likes drama, action, and thriller movies
 
 # Convert user data into vectors
 

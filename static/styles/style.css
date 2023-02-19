@@ -79,7 +79,7 @@ img {
 }
 
 
-#locationform, #budgetform, #SATform, #ACTform, #sizeform, #gpaform{
+#locationform, #budgetform, #SATreadform, #SATmathform, #ACTform, #sizeform, #gpaform{
     display:none;
 }
 

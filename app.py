@@ -18,14 +18,17 @@ def index_page():
         data = request.form
         location = data.getlist('location')
         budget = data.getlist('budget')
-        gpa = data.getlist('GPA')
-        major = data.getlist('major')
+        satread = data.getlist('SATread')
+        satmath = data.getlist('SATmath')
+        act = data.getlist('ACT')
+
         size = data.getlist('size')
 
         #print(data.getlist('location'))
-        print(location, budget, gpa, major, size)
+        print(location, budget, satread, satmath, act, size)
         
         return render_template("index.html")
+
 
 
 

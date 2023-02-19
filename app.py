@@ -27,7 +27,18 @@ def index_page():
         
         return render_template("index.html")
 
-#def get_inputs():
+
+
+@app.route("/collage", methods = ['GET', 'POST'])
+def collage_page():
+    if request.method == 'GET':
+        return render_template("collage.html")
+
+    if request.method == 'POST':
+        
+        
+        return render_template("collage.html")
+
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

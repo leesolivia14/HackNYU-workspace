@@ -21,7 +21,10 @@ function main(){
             const form = document.getElementById("locationform");
             console.log(form.style);
             clearAll();
-            form.style.display = "block";           
+            form.style.display = "block"; 
+
+            const button = document.getElementById("button"); 
+            button.style.display = "block";
         }
 
         else if (evt.target.id==='budgetimg'){
@@ -31,6 +34,9 @@ function main(){
             clearAll();
 
             form.style.display = "block";
+            const button = document.getElementById("button"); 
+            button.style.display = "block";
+
         } else if (evt.target.id==='SATreadimg'){
             const form = document.getElementById("SATreadform");
             console.log(form.style);
@@ -38,6 +44,9 @@ function main(){
             clearAll();
 
             form.style.display = "block";
+            const button = document.getElementById("button"); 
+            button.style.display = "block";
+
         } else if (evt.target.id==='SATmathimg'){
             const form = document.getElementById("SATmathform");
             console.log(form.style);
@@ -45,6 +54,9 @@ function main(){
             clearAll();
 
             form.style.display = "block";
+            const button = document.getElementById("button"); 
+            button.style.display = "block";
+
         }else if (evt.target.id==='ACTimg'){
             const form = document.getElementById("ACTform");
             console.log(form.style);
@@ -52,6 +64,10 @@ function main(){
             clearAll();
 
             form.style.display = "block";
+
+            const button = document.getElementById("button"); 
+            button.style.display = "block";
+
         } else if (evt.target.id==='sizeimg'){
             const form = document.getElementById("sizeform");
             console.log(form.style);
@@ -59,6 +75,9 @@ function main(){
             clearAll();
 
             form.style.display = "block";
+            const button = document.getElementById("button"); 
+            button.style.display = "block";
+
         }
 
     });

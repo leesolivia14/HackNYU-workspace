@@ -2,7 +2,7 @@
 <html>
     <div class="page">
     <head>
-        <title> College Recommender </title>
+        <title> College Collage </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,9 +14,28 @@
     <script src="./static/js/script.js"></script>
 
     <body>
+
+        
         <div class="title">
-            <h1>College Collage</h1>
+
+            <h1><img src="./static/img/logo.png" alt="College Collage" id ="logo" class="leftstick">College Collage<img src="./static/img/logo.png" alt="College Collage" id ="logo" class="rightstick"></h1>
+            <!-- <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo">
+            <img src="./static/img/logo.png" alt="College Collage" id ="logo"> -->
+            
         </div>
+
         
             <form method="post">
             
@@ -25,31 +44,16 @@
                         <div class="carditem" id="location">
                             <label for= "location"></label>
                             <img src="./static/img/location.png" alt="location" id="locationimg">
-                            <p>Instate?</p>
+                            <p>Instate Tuition?</p>
                         </div>
 
 
                         <div class="carditem" id="budget">
                             
                             <label for= "budget"></label>
-                            <img src="./static/img/budget.png" alt="budget" id="budgetimg">
+                            <img src="./static/img/money.gif" alt="budget" id="budgetimg">
                             <p>Budget</p>
                             
-                        </div>
-                        
-                        <div class="carditem" id="SATread">
-                            <img src="./static/img/location.png" alt="satread" id ="SATreadimg">
-                            <p>SAT</p>
-                        </div>
-
-                        <div class="carditem" id="SATmath">
-                            <img src="./static/img/location.png" alt="satmath" id ="SATmathimg">
-                            <p>SAT</p>
-                        </div>
-
-                        <div class="carditem" id="ACT">
-                            <img src="./static/img/location.png" alt="act" id = "ACTimg">
-                            <p>ACT</p>
                         </div>
 
                         <div class="carditem" id="size">
@@ -57,6 +61,29 @@
                             <img src="./static/img/population.png" alt="size" id = "sizeimg">
                             <p>Preferred Size</p>
                         </div>
+                        
+
+                        <div class="carditem" id="SATmath">
+                            <img src="./static/img/math.gif" alt="satmath" id ="SATmathimg">
+                                <p>SAT Math</p>
+                            
+                        </div>
+
+
+                        <div class="carditem" id="SATread">
+                            <img src="./static/img/garfield.gif" alt="satread" id ="SATreadimg">
+                            <p>SAT Reading</p>
+                        </div>
+
+                        
+                       
+
+                        <div class="carditem" id="ACT">
+                            <img src="./static/img/act.gif" alt="act" id = "ACTimg">
+                            <p>ACT</p>
+                        </div>
+
+                        
                     
 
 
@@ -140,6 +167,8 @@
                         <option value="VI">Virgin Islands</option>
                     </select>
                     -->
+
+                    <!--
                     <select class="dropdown" name="budget" id="budgetform" required>
                         <option value="0">0 - $5,000</option>
                         <option value="1">5 - $15,000</option>
@@ -149,12 +178,13 @@
                         <option value="5">$45,000 - $55,000</option>
                         <option value="6">$55,000 - $65,000</option>
                     </select>
-
-                    <input type="text"name="SATread" id="SATreadform" > </input>
-                    <input type="text"name="SATmath" id="SATmathform" > </input>
+                -->
+                    <input type="text"name="budget" placeholder="Your budget.." id="budgetform" > </input>
+                    <input type="text"name="SATread" placeholder="Your SAT reading score..." id="SATreadform" > </input>
+                    <input type="text"name="SATmath" placeholder="Your SAT math score..." id="SATmathform" > </input>
                     
 
-                    <input type="text"name="ACT" id="ACTform" > </input>
+                    <input type="text"name="ACT" placeholder="Your ACT score..." id="ACTform" > </input>
 
                     <select class="dropdown"name="size" id="sizeform">
                         <option value="0">Small</option>
@@ -163,7 +193,7 @@
                     </select>
 
 
-                    <input class="button" type="submit" value="submit"></input>
+                    <input id="button" class="button" type="submit" value="submit"></input>
             
 
                 </form>

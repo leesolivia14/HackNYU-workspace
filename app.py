@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 
+from college_rec_draft_2am import *
 
 api_key = 'unwIttz59iNAXrLsiHSwV0n3Wrb8hKR0nm4TMq2D'
 # creating an instance of Flask class
@@ -14,20 +15,57 @@ def index_page():
         return render_template("index.html")
 
     if request.method == 'POST':
-        
+        global data
+        global location
+        global budget
+        global satread
+        global satmath
+        global act
+
+        satread = 0
+        satmath = 0
+        act = 0
+
+
+
         data = request.form
-        location = data.getlist('location')
-        budget = data.getlist('budget')
-        satread = data.getlist('SATread')
-        satmath = data.getlist('SATmath')
-        act = data.getlist('ACT')
+        try:
+            location = int(data.getlist('location')[0])
+        except:
+            location = 0
+        
+        try:
+            budget = int(data.getlist('budget')[0])
+        except:
+            budget = 0
+        
+        try:
+            satread = int(data.getlist('SATread')[0])
+        except:
+            satread = 0
+
+        try:
+            satmath = int(data.getlist('SATmath')[0])
+        except:
+            satmath = 0
+
+        try:
+            act = int(data.getlist('ACT')[0])
+        except:
+            act = 0
 
         size = data.getlist('size')
 
         #print(data.getlist('location'))
         print(location, budget, satread, satmath, act, size)
         
-        return render_template("index.html")
+        global topfive
+        topfive = getColleges(location, budget, satread, satmath, act)
+
+        print("finished generating top 5 colleges")
+        print(topfive[0])
+
+        return render_template("collage.html", first=topfive[0], second=topfive[1], third=topfive[2], fourth=topfive[3], fifth=topfive[4])
 
 
 

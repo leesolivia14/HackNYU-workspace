@@ -2,7 +2,7 @@
 <html>
     <div class="page">
     <head>
-        <title> College Recommender </title>
+        <title> College Collage </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,37 +15,57 @@
 
     <body>
         <div class="title">
-            <h1>College Collage</h1>
+            <h1><img src="./static/img/logo.png" alt="College Collage" id ="logo" class="leftstick">College Collage<img src="./static/img/logo.png" alt="College Collage" id ="logo" class="rightstick"></h1>
+
         </div>
         
-        <div class="collagecontainer">
+        
             <div class="collage" id="collage">
-                <figure class="collageitem" id="collageitem--1">
-                    <img src="./static/img/nyu.jpg" class="collageimg" alt="">
-                </figure>
+                
+                    <figure class="collageitem" id="collageitem--1">
+                        <!--<img src="./static/img/nyu.jpg" class="collageimg" alt="">-->
+                        {% if fourth %}
+                        <p>{{fourth}}</p>
+                        {% endif %}
+                    </figure>
+             
 
                 <figure class="collageitem" id="collageitem--2" >
-                    <img src="./static/img/nyu.jpg" class="collageimg" alt="">
+                    <!--<img src="./static/img/nyu.jpg" class="collageimg" alt="">-->
+                    {% if fifth %}
+                    <p>{{fifth}}</p>
+                    {% endif %}
                 </figure>
 
                 <figure class="collageitem" id="collageitem--3" >
-                    <img src="./static/img/nyu.jpg" class="collageimg" alt="">
+                    <!--<img src="./static/img/nyu.jpg" class="collageimg" alt="">-->
+                    {% if first %}
+                    <p>{{first}}</p>
+                    {% endif %}
                 </figure>
 
                 <figure class="collageitem" id="collageitem--4" >
-                    <img src="./static/img/nyu.jpg" class="collageimg" alt="">
+                    {% if third%}
+                    <p>{{third}}</p>
+                    {% endif %}
+                    <!--<img src="./static/img/nyu.jpg" class="collageimg" alt="">-->
                 </figure>
 
                 <figure class="collageitem" id="collageitem--5" >
-                    <img src="./static/img/nyu.jpg" class="collageimg" alt="">
+                    <!--<img src="./static/img/nyu.jpg" class="collageimg" alt="">-->
+                    {% if second %}
+                    <p>{{second}}</p>
+                    {% endif %}
                 </figure>
 
+                <!--
                 <figure class="collageitem" id="collageitem--6">
                     <img src="./static/img/nyu.jpg" class="collageimg" alt="">
                 </figure>
+            -->
 
             </div>
-        </div>
+        
 
     </body>
     </div> 
